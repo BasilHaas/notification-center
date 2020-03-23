@@ -11,8 +11,8 @@ export TG_BOT_TOKEN=<your_bot_secret_token>
 
 or write variables to environment file:
 ```bash
-echo TG_CHAT_ID=<chat_id_with_your_bot> >> /etc/environment
-echo TG_BOT_TOKEN=<your_bot_secret_token> >> /etc/environment
+echo 'TG_CHAT_ID=<chat_id_with_your_bot>' >> /etc/environment
+echo 'TG_BOT_TOKEN=<your_bot_secret_token>' >> /etc/environment
 source /etc/environment
 ```
 
