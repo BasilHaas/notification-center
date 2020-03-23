@@ -6,10 +6,10 @@ import (
 	make_message "notification-center/controllers"
 )
 
-const (
-	ModeMarkdown = "Markdown"
-	ModeHTML     = "HTML"
-)
+//const (
+//	ModeMarkdown = "Markdown"
+//	ModeHTML     = "HTML"
+//)
 
 func main() {
 	r := mux.NewRouter()
