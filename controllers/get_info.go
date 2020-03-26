@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	gitlab_info "notification-center/struct"
+	"notification-center/utils"
 )
 
 func GetInfo(w http.ResponseWriter, r *http.Request) {
@@ -26,6 +27,6 @@ func GetInfo(w http.ResponseWriter, r *http.Request) {
 		text += fmt.Sprintf("*Author*: %s  %s\n", info.Commit.AuthorName, info.Commit.AuthorEmail)
 		text += fmt.Sprintf("*Please visit the* [job page](%s) *to know more information*", info.Repository.Homepage+"/-/jobs/"+info.BuildID)
 
-		sendMessage(text)
+		utils.SendMessage(text)
 	}
 }

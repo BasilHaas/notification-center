@@ -1,4 +1,4 @@
-package make_message
+package utils
 
 import (
 	tgbotapi "github.com/Syfaro/telegram-bot-api"
@@ -28,7 +28,7 @@ func getChatId() int64 {
 	return chatId
 }
 
-func sendMessage(text string) {
+func SendMessage(text string) {
 
 	bot, err := tgbotapi.NewBotAPI(getToken())
 	if err != nil {
